@@ -2,6 +2,8 @@
 
 Jogo simples de pixel art feito em Java com Swing.
 
+![Exemplo do jogo](assets/image.png)
+
 ## Recursos
 
 - Pintura de pixels com seleção de cor
