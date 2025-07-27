@@ -12,8 +12,7 @@ Jogo simples de pixel art feito em Java com Swing.
 
 Compile com:
 
-javac -d build src/br/com/pixelart/**/*.java
-javac -cp build -d build src/br/com/pixelart/Main.java
+javac -d build $(find src/br/com/pixelart -name "*.java")
 
 Rode com:
 
