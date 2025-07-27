@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
 
 public class PixelGridPanel extends JPanel {
     private final Pixel[][] pixels;
@@ -37,6 +38,14 @@ public class PixelGridPanel extends JPanel {
 
     public void setSelectedColor(Color color) {
         this.selectedColor = color;
+    }
+
+    public BufferedImage exportToImage() {
+        BufferedImage image = new BufferedImage(cols, rows, BufferedImage.TYPE_INT_RGB);
+        for (int y = 0; y < rows; y++)
+            for (int x = 0; x < cols; x++)
+                image.setRGB(x, y, pixels[y][x].getColor().getRGB());
+        return image;
     }
 
     @Override
