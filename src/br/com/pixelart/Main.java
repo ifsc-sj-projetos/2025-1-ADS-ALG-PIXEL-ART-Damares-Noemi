@@ -16,6 +16,7 @@ public class Main {
 
             JPanel controlPanel = new JPanel();
 
+            // Botão de cor
             JButton colorButton = new JButton("Escolher cor");
             colorButton.addActionListener(e -> {
                 Color selected = JColorChooser.showDialog(frame, "Escolha uma cor", Color.BLACK);
@@ -24,9 +25,13 @@ public class Main {
                 }
             });
 
+            // Botão de borracha
             JButton eraserButton = new JButton("Borracha");
-            eraserButton.addActionListener(e -> gridPanel.setSelectedColor(Color.WHITE));
+            eraserButton.addActionListener(e -> {
+                gridPanel.setSelectedColor(Color.WHITE);
+            });
 
+            // Botão de salvar imagem
             JButton saveButton = new JButton("Salvar imagem");
             saveButton.addActionListener(e -> {
                 try {
@@ -41,10 +46,12 @@ public class Main {
                 }
             });
 
+            // Adiciona os botões ao painel de controle
             controlPanel.add(colorButton);
             controlPanel.add(eraserButton);
             controlPanel.add(saveButton);
 
+            // Adiciona os componentes no frame
             frame.setLayout(new BorderLayout());
             frame.add(gridPanel, BorderLayout.CENTER);
             frame.add(controlPanel, BorderLayout.SOUTH);
