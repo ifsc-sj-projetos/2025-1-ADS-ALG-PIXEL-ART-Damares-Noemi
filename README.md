@@ -2,7 +2,8 @@
 
 Jogo simples de pixel art feito em Java com Swing.
 
-![Exemplo do jogo](assets/image.png)
+![Exemplo 1 do jogo](assets/pato.png)
+![Exemplo 2 do jogo](assets/sorvete.png)
 
 ## Recursos
 
