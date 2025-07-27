@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Pixel Art Game");
-            PixelGridPanel gridPanel = new PixelGridPanel(16, 16);
+            PixelGridPanel gridPanel = new PixelGridPanel(40, 40);
 
             JPanel controlPanel = new JPanel();
 
